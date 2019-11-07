@@ -11,10 +11,13 @@ body{
 
 h1{
   font-size: 50px;
-  text-align: center;
   margin: auto;
+  text-align: center;
+  color: white;
 }
-
+label{
+  color: white;
+}
 h2{
   font-size: 50px;
   line-height: 1.5;
@@ -133,20 +136,21 @@ header{
   background-position: center;  /* Parallax effect */
   background-repeat: no-repeat; /* Parallax effect */
   background-size: cover;       /* Parallax effect */
-  color: yellow;
   height: 400px;                /* Parallax effect */
 
   /*Your code here - cover the entire row*/
-  background-color: #ddd;
 
   grid-column-start: 1;
   grid-column-end: -1;
   grid-row: 2/ span 1;
   width: 100vw;
+  color: white;
 }
-
+.flip-card-back h1{
+  color:navy;
+}
 header p{
-  color: yellow;
+  color: white;
   font-size: 24px;
   padding: 100px;
   text-align: center;
@@ -171,7 +175,7 @@ header p{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card:focus .flip-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -183,13 +187,13 @@ header p{
 }
 
 .flip-card-front {
-  background-color: #bbb;
+  background-color: yellow;
   color: black;
 }
 
 .flip-card-back {
-  background-color: #2980b9;
-  color: white;
+  background-color: yellow;
+  color: navy;
   transform: rotateY(180deg);
 }
 .form{
@@ -217,7 +221,6 @@ header p{
   border: 2px solid yellow;
 }
 .about-image{
-  max-height: 700px;
   grid-column: 1/span 3;
   grid-row: 3/ span 1;
   overflow: hidden;
@@ -332,17 +335,17 @@ header p{
 .picture8-image{
   grid-row: 10/ span 1;
   grid-column: 1/ span 3;
-  filter: brightness(50%);
+  filter: brightness(90%);
 }
 .picture9-image{
   grid-row: 11/ span 1;
   grid-column: 1/ span 3;
-  filter: brightness(50%);
+  filter: brightness(90%);
 }
 .picture10-image{
   grid-row: 12/ span 1;
   grid-column: 1/ span 3;
-  filter: brightness(50%);
+  filter: brightness(90%);
 }
 
 @media screen and (min-width: 600px){
@@ -547,7 +550,7 @@ header p{
     margin: auto;
   }
   .header {
-      color: yellow;
+      color: white;
       font-size: 27px;
       padding: 10px;
   }
@@ -602,7 +605,6 @@ header p{
   .picture{
     grid-row: 3/ span 1;
     grid-column: 2/ span 3;
-    border: none;
     margin-left: 0;
     font-size: 16px;
   }
@@ -671,4 +673,3 @@ header p{
       top:0;
     }
   }
-  
